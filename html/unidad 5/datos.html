@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Unidad 5</title>
+<head></head>
+<body>
+<h1 align="center">Datos Departamento.</h1>
+<center>
+ID_DEPARTAMENTO:
+<input type="text" id="valor1" placeholder="ingrese el valor 1">
+<br>
+<br>
+NOMBRE:
+<input type="text" id="valor2" placeholder="ingrese el valor 2">
+<br>
+<br>
+DEPARTAMENTO:
+<input type="text" id="valor3" placeholder="ingrese el valor 3">
+<br>
+<br>
+PUESTO:
+<input type="text" id="valor4" placeholder="ingrese el valor 4">
+<br>
+<br>
+SUELDO:
+<input type="text" id="valor5" placeholder="ingrese el valor 5">
+<br>
+<br>
+<button onclick="mostrardatos()">Mostrar Datos</button>
+<script>
+function mostrardatos(){
+                         var valor1=document.getElementById("valor1").value;
+                         var valor2=document.getElementById("valor2").value;
+                         var valor3=document.getElementById("valor3").value;
+                         var valor4=document.getElementById("valor4").value;
+                         var valor5=document.getElementById("valor5").value;
+
+                         document.writeln(valor1);
+                         document.writeln(valor2);
+                         document.writeln(valor3);
+                         document.writeln(valor4);
+                         document.writeln(valor5);
+
+                         alert("Dato 1: "+valor1);
+                         alert("Dato 2: "+valor2);
+                         alert("Dato 3: "+valor3);
+                         alert("Dato 4: "+valor4);
+                         alert("Dato 5: "+valor5);
+                     }
+</script>
+</center>
+</body>
+</html>

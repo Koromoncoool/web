@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta charset ="utf-8">
+
+<script lenguaje="javascript1.5">
+alert("incio");
+ var papa;
+ var venta;
+ var caducidad;
+ var cantidad;
+ var CompraTotal;
+ var precio=14;
+ var descuento1=.20;
+ var iva=.16;
+ var boni1=750;
+ var descuento2=.30;
+ var boni2=.13;
+ 
+ papa=prompt("Introduce el tipo de las papas salada/adobada");
+ caducidad=prompt("Introduce la fecha de caducidad");
+
+ if(papa=="adobada")
+  {
+   
+    if(caducidad==14)
+     { 
+      alert("El precio de las papas es de: "+precio);
+      cantidad=prompt("Ingrese la cantidad: ");
+      CompraTotal=cantidad*precio;
+      if(CompraTotal<5000)
+       {
+                descuento1=CompraTotal*descuento1;
+                iva=CompraTotal*iva;
+                venta=CompraTotal-descuento1+iva;
+                alert("El total de su compra es: "+venta);        
+       }
+       else if(CompraTotal=>5000)
+              {
+                descuento1=CompraTotal*descuento1;
+                iva=CompraTotal*iva;
+                venta=CompraTotal-descuento1+iva-750;
+                alert("El total de su compra es: "+venta);
+              }
+      
+      }else 
+            {
+              alert("sin caducar");
+              alert("El precio de las papas es de: "+precio);
+              cantidad=prompt("Ingrese la cantidad: ");
+              CompraTotal=cantidad*precio;
+              if(CompraTotal<5000)
+               {
+                descuento1=CompraTotal*descuento1;
+                iva=CompraTotal*iva;
+                boni2=CompraTotal*boni2;
+                venta=CompraTotal-descuento1+iva-boni2;
+                alert("El total de su compra es: "+venta);
+                
+               }
+               else if(CompraTotal>=5000)
+                      {
+                        descuento1=CompraTotal*descuento1;
+                        iva=CompraTotal*iva;
+                        boni2=CompraTotal*boni2;
+                        venta=CompraTotal-descuento1+iva-boni2-750;
+                        alert("El total de su compra es: "+venta);
+                      }
+             }
+  }
+  
+ else if(papa=="salada")
+  {
+    
+    if(caducidad==14)
+     { 
+      alert("El precio de las papas es de: "+precio);
+      cantidad=prompt("Ingrese la cantidad: ");
+      CompraTotal=cantidad*precio;
+      if(CompraTotal<5000)
+       {
+         descuento2=CompraTotal*descuento2;
+         iva=CompraTotal*iva;
+         venta=CompraTotal-descuento2+iva;
+         alert("El total de su compra es: "+venta);           
+       }
+       else if(CompraTotal=>5000)
+              {
+                descuento2=CompraTotal*descuento2;
+                iva=CompraTotal*iva;
+                venta=CompraTotal-descuento2+iva-750;
+                alert("El total de su compra es: "+venta);  
+              }
+      
+      }else 
+            {
+              alert("sin caducar");
+              alert("El precio de las papas es de: "+precio);
+              cantidad=prompt("Ingrese la cantidad: ");
+              CompraTotal=cantidad*precio;
+              if(CompraTotal<5000)
+               {
+                descuento2=CompraTotal*descuento2;
+                iva=CompraTotal*iva;
+                boni2=CompraTotal*boni2;
+                venta=CompraTotal-descuento2-boni2+iva;
+                alert("El total de su compra es: "+venta); 
+               }
+               else if(CompraTotal>=5000)
+                      {
+                        descuento2=CompraTotal*descuento2;
+                        iva=CompraTotal*iva;
+                        boni2=CompraTotal*boni2;
+                        venta=CompraTotal-descuento2+iva-boni2-750;
+                        alert("El total de su compra es: "+venta);
+                      }
+             }
+  } 
+</script>
+</head>
+<body>
+</body>
+</html>

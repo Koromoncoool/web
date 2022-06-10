@@ -1,0 +1,100 @@
+LISTAR
+<h1 alingn="center">Inventario</h1>
+<?php
+ $connection = mysql_connect('localhost','root','');
+ mysql_select_db('ZAPATERIA');
+ $query="SELECT * FROM INVENTARIO";
+ $result=mysql_query($query);
+ echo "<table border='1'>";
+ echo "<tr><td>ID_PRODUCTO</td>";
+ echo "<td>ID_FABRICANTE</td>";
+ echo "<td>MARCA</td>";
+ echo "<td>NOMBRE</td>";
+ echo "<td>CLASE_ZAPATO</td>";
+ echo "<td>TAMANO</td>";
+ echo "<td>PRECIO</td>";
+ echo "<td>PRECIO_DESCUENTO</td>";
+ echo "<td>CANTIDAD</td>";
+ echo "<td>NOMBRE_ENCARGADO</td></tr>";
+ while($row=mysql_fetch_array($result)){
+ echo "<tr><td>".$row['ID_PRODUCTO']."</td><td>".$row['ID_FABRICANTE']."</td><td>".$row['MARCA']."</td><td>".$row['NOMBRE']."</td><td>".$row['CLASE_ZAPATO']."</td><td>".$row['TAMANO']."</td><td>".$row['PRECIO']."</td><td>".$row['PRECIO_DESCUENTO']."</td><td>".$row['CANTIDAD']."</td><td>".$row['NOMBRE_ENCARGADO']."</td></tr>";
+}
+ echo "</table>";
+ mysql_close();
+?>
+<br>
+
+<h1 alingn="center">Proveedor</h1>
+<?php
+ $connection = mysql_connect('localhost','root','');
+ mysql_select_db('ZAPATERIA');
+ $query="SELECT * FROM PROVEEDOR";
+ $result=mysql_query($query);
+ echo "<table border='1'>";
+ echo "<tr><td>ID_PRODUCTO</td>";
+ echo "<td>ID_PEDIDO</td>";
+ echo "<td>FABRICANTE</td>";
+ echo "<td>TIPO_PAGO</td>";
+ echo "<td>DIRECCION_ORIGEN</td>";
+ echo "<td>DIRECCION_LLEGADA</td>";
+ echo "<td>PAQUETERIA</td>";
+ echo "<td>COSTO_PAQUETERIA</td>";
+ echo "<td>FECHA_PEDIDO</td>";
+ echo "<td>FECHA_LLEGADA</td></tr>";
+ while($row=mysql_fetch_array($result)){
+ echo "<tr><td>".$row['ID_PRODUCTO']."</td><td>".$row['ID_PEDIDO']."</td><td>".$row['FABRICANTE']."</td><td>".$row['TIPO_PAGO']."</td><td>".$row['DIRECCION_ORIGEN']."</td><td>".$row['DIRECCION_LLEGADA']."</td><td>".$row['PAQUETERIA']."</td><td>".$row['COSTO_PAQUETERIA']."</td><td>".$row['FECHA_PEDIDO']."</td><td>".$row['FECHA_LLEGADA']."</td></tr>";
+}
+ echo "</table>";
+ mysql_close();
+?>
+<br>
+
+<h1 alingn="center">TRABAJADOR</h1>
+<?php
+ $connection = mysql_connect('localhost','root','');
+ mysql_select_db('ZAPATERIA');
+ $query="SELECT * FROM TRABAJADOR";
+ $result=mysql_query($query);
+ echo "<table border='1'>";
+ echo "<tr><td>ID_TRABAJADOR</td>";
+ echo "<td>NOMBRE</td>";
+ echo "<td>APELLIDO_P</td>";
+ echo "<td>APELLIDO_M</td>";
+ echo "<td>DIRECCION</td>";
+ echo "<td>PUESTO</td>";
+ echo "<td>TIPO_PAGO</td>";
+ echo "<td>PAGO</td>";
+ echo "<td>EDAD</td>";
+ echo "<td>HORARIO</td></tr>";
+ while($row=mysql_fetch_array($result)){
+ echo "<tr><td>".$row['ID_TRABAJADOR']."</td><td>".$row['NOMBRE']."</td><td>".$row['APELLIDO_P']."</td><td>".$row['APELLIDO_M']."</td><td>".$row['DIRECCION']."</td><td>".$row['PUESTO']."</td><td>".$row['TIPO_PAGO']."</td><td>".$row['PAGO']."</td><td>".$row['EDAD']."</td><td>".$row['HORARIO']."</td></tr>";
+}
+ echo "</table>";
+ mysql_close();
+?>
+<br>
+
+<h1 alingn="center">VENTA</h1>
+<?php
+ $connection = mysql_connect('localhost','root','');
+ mysql_select_db('ZAPATERIA');
+ $query="SELECT * FROM VENTA";
+ $result=mysql_query($query);
+ echo "<table border='1'>";
+ echo "<tr><td>ID_VENTA</td>";
+ echo "<td>NUMERO_VENTA</td>";
+ echo "<td>NOMBRE_ATENDIO</td>";
+ echo "<td>FECHA</td>";
+ echo "<td>HORA</td>";
+ echo "<td>NOMBRE_PRODUCTO</td>";
+ echo "<td>PRECIO</td>";
+ echo "<td>MARCA</td>";
+ echo "<td>CANTIDAD</td>";
+ echo "<td>PRECIO_TOTAL</td></tr>";
+ while($row=mysql_fetch_array($result)){
+ echo "<tr><td>".$row['ID_VENTA']."</td><td>".$row['NUMERO_VENTA']."</td><td>".$row['NOMBRE_ATENDIO']."</td><td>".$row['FECHA']."</td><td>".$row['HORA']."</td><td>".$row['NOMBRE_PRODUCTO']."</td><td>".$row['PRECIO']."</td><td>".$row['MARCA']."</td><td>".$row['CANTIDAD']."</td><td>".$row['PRECIO_TOTAL']."</td></tr>";
+}
+ echo "</table>";
+ mysql_close();
+?>
+<br>

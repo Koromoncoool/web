@@ -1,0 +1,76 @@
+﻿<html>
+<title>practica 9</title>
+<head>
+
+<meta name="viewport" content="width=divice=width, initial-scale-1">
+<script lenguaje="javascript1.5">
+alert("Menu de perimetro de figuras");
+var opcion;
+opcion=parseInt(prompt("a que figura le quiere sacar el perimetro:1.triangulo,2.cuadrado,3.romboide,4.rectangulo,5.rombo"));
+ 
+switch(opcion)
+      {
+        case 1:
+        alert("Triangulo");
+        var valor1,valor2,valor3,perimetro;
+        valor1=parseFloat(prompt("Ingrese el lado 1"));
+        valor2=parseFloat(prompt("Ingrese el lado 2"));
+        valor3=parseFloat(prompt("Ingrese el lado 3"));
+        perimetro=valor1+valor2+valor3;
+        alert("El resultado es: "+perimetro);
+        break;
+
+        case 2:
+        alert("Cuadrado");
+        var valor1,valor2,valor3,valor4,perimetro;
+        valor1=parseFloat(prompt("Ingrese el lado 1"));
+        valor2=parseFloat(prompt("Ingrese el lado 2"));
+        valor3=parseFloat(prompt("Ingrese la altura 1"));
+        valor4=parseFloat(prompt("Ingrese la altura 2"));
+        perimetro=valor1+valor2+valor3+valor4;
+        alert("El resultado es: "+perimetro);
+        break;
+        
+        case 3:
+        alert("Romboide");
+        var valor1,valor2,valor3,valor4,perimetro;
+        valor1=parseFloat(prompt("Ingrese la base 1"));
+        valor2=parseFloat(prompt("Ingrese la base 2"));
+        valor3=parseFloat(prompt("Ingrese el lado 3"));
+        valor4=parseFloat(prompt("Ingrese el lado 4"));
+        perimetro=valor1+valor2+valor3+valor4;
+        alert("El resultado es: "+perimetro);
+        break;
+ 
+        case 4:
+        alert("Rectangulo");
+        var valor1,valor2,valor3,valor4,perimetro;
+        valor1=parseFloat(prompt("Ingrese la base 1"));
+        valor2=parseFloat(prompt("Ingrese la base 2"));
+        valor3=parseFloat(prompt("Ingrese el lado 3"));
+        valor4=parseFloat(prompt("Ingrese el lado 4"));
+        perimetro=valor1+valor2+valor3+valor4;
+        alert("El resultado es: "+perimetro);
+        break;
+    
+        case 5:
+        alert("Rombo");
+        var valor1,valor2,valor3,valor4,perimetro;
+        valor1=parseFloat(prompt("Ingrese lado 1"));
+        valor2=parseFloat(prompt("Ingrese lado 2"));
+        valor3=parseFloat(prompt("Ingrese lado 3"));
+        valor4=parseFloat(prompt("Ingrese lado 4"));
+        perimetro=valor1+valor2+valor3+valor4;
+        alert("El resultado es: "+perimetro);
+        break;
+
+        default:
+        alert("opcion no valida");
+        break;
+      }
+
+</script>
+</head>
+<body>
+</body>
+</html>

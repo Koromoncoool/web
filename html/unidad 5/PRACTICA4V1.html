@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Triangulo</title>
+</head>
+<body>
+<h1 align="center">Triangulo.</h1>
+<br>
+valor 1:
+<input type="text" id="valor1" placeholder="Valor 1...">
+<br>
+valor 2:
+<input type="text" id="valor2" placeholder="Valor 2...">
+<br>
+valor 3:
+<input type="text" id="valor3" placeholder="Valor 3...">
+<br>
+<button onClick="Triangulo()">Perimetro</button>
+<script>
+function Triangulo()
+{
+  var valor1=document.getElementById("valor1").value;
+  var valor2=document.getElementById("valor2").value;
+  var valor3=document.getElementById("valor3").value;
+  
+  var T=parseFloat(valor1)+parseFloat(valor2)+parseFloat(valor3);
+  alert("El resultado del perimetro es "+T);
+}
+</script>
+</body>
+</html>

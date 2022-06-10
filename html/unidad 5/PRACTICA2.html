@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Unidad 5</title>
+<head></head>
+<body>
+<h1 align="center">practica2.</h1>
+<center>
+ID_TRANSPORTE:
+<input type="text" id="valor1" placeholder="ingrese el del transporte">
+<br>
+<br>
+NOMBRE:
+<input type="text" id="valor2" placeholder="ingrese el valor NOMBRE">
+<br>
+<br>
+RESPONSABLE:
+<input type="text" id="valor3" placeholder="ingrese el valor responsable">
+<br>
+<br>
+HORARIO:
+<input type="text" id="valor4" placeholder="ingrese el valor Horario">
+<br>
+<br>
+PRODUCTO:
+<input type="text" id="valor5" placeholder="ingrese el valor PRODUCTO">
+<br>
+<br>
+DESTINO:
+<input type="text" id="valor6" placeholder="ingrese el valor DESTINO">
+<br>
+<br>
+LLEGADA:
+<input type="text" id="valor7" placeholder="ingrese el valor LLEGADA">
+<br>
+<br>
+TIPO:
+<input type="text" id="valor8" placeholder="ingrese el valor TIPO">
+<br>
+<br>
+COSTO:
+<input type="text" id="valor9" placeholder="ingrese el valor COSTO">
+<br>
+<br>
+ORDEN_DESERVICIO:
+<input type="text" id="valor10" placeholder="ingrese el valor SALDO">
+<br>
+<br>
+<button onclick="mostrardatos()">Mostrar Datos</button>
+<script>
+function mostrardatos(){
+                         var valor1=document.getElementById("valor1").value;
+                         var valor2=document.getElementById("valor2").value;
+                         var valor3=document.getElementById("valor3").value;
+                         var valor4=document.getElementById("valor4").value;
+                         var valor5=document.getElementById("valor5").value;
+                         var valor6=document.getElementById("valor6").value;
+                         var valor7=document.getElementById("valor7").value;
+                         var valor8=document.getElementById("valor8").value;
+                         var valor9=document.getElementById("valor9").value;
+                         var valor10=document.getElementById("valor10").value;
+
+
+                         document.writeln(valor1);
+                         document.writeln(valor2);
+                         document.writeln(valor3);
+                         document.writeln(valor4);
+                         document.writeln(valor5);
+                         document.writeln(valor6);
+                         document.writeln(valor7);
+                         document.writeln(valor8);
+                         document.writeln(valor9);
+                         document.writeln(valor10);
+
+                         alert("Dato 1: "+valor1);
+                         alert("Dato 2: "+valor2);
+                         alert("Dato 3: "+valor3);
+                         alert("Dato 4: "+valor4);
+                         alert("Dato 5: "+valor5);
+                         alert("Dato 6: "+valor6);
+                         alert("Dato 7: "+valor7);
+                         alert("Dato 8: "+valor8);
+                         alert("Dato 9: "+valor9);
+                         alert("Dato 10: "+valor10);
+                     }
+</script>
+</center>
+</body>
+</html>

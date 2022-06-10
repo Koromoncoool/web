@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+<meta charset ="utf-8">
+<script lenguaje="javascript1.5">
+var producto;
+var precio;
+var seleccion;
+var cantidad;
+var iva=0.16;
+var precioT;
+var total;
+var velocidad;
+var distancia
+var tiempo;
+
+alert("Introduce que quiere hacer comprar producto/calcular la velocidad");
+seleccion=prompt("producto/velocidad");
+
+if(seleccion=="producto")
+ {
+   precio=prompt("ingrese el precio del producto en numero enteros");
+   alert("El precio del producto: "+precio)
+   cantidad=prompt("Cuantos productos va a comprar");
+   alert("se le pondra el iva el cual vale de 16%");
+   precioT=precio*cantidad;
+   iva=precioT*iva;
+   total=precioT+iva;
+   alert("el precio total de los productos es:"+total);   
+ }
+else if(seleccion=="velocidad")
+{
+  alert("se va a calcular la velocidad");
+  distancia=prompt("Ingrese la distancia");
+  tiempo=prompt("Ingrese el tiempo");
+  velocidad=distancia/tiempo;
+  alert("La velicidad es:"+velocidad); 
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
